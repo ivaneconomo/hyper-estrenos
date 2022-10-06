@@ -16,31 +16,40 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header class="container-fluid bg-dark py-1">
-    <nav class="px-5 navbar navbar-expand">
-      <!-- Logo -->
-      <div class="">
-        <a class="navbar-brand" href="#">
-          <img class="logo" src="./assets/hre-img/hre-logo-white.png" alt="Hyper Estrenos Logo">
-        </a>
-      </div>
-      <!-- Botones Navegación -->
-      <div class="d-flex ms-auto">
-        <div class="container justify-content-center me-5">
-          <a class="btn btn-warning fw-bold" href="#">Suscripción</a>
-          <a class="mx-3 btn btn-warning fw-bold" href="#">Contácto</a>
-          <a class="btn btn-warning fw-bold" href="#">Nosotros</a>
+  <header class="sticky-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg px-5">
+        <div class="container-fluid">
+          <!-- Logo de la web -->
+          <a class="" href="#"><img class="logo" src="./assets/hre-img/hre-logo-white.png" alt=""></a>
+          <!-- Boton Toggler -->
+          <button class="navbar-toggler togglerNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Div Contenido Toggler -->
+          <div class="collapse navbar-collapse growInitial" id="navbarToggler">
+            <!-- Botones de navegación -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-lg-4">
+                <a class="nav-link fw-bold px-lg-4 buttonNav" href="#">Suscripción</a>
+              </li>
+              <li class="nav-item me-lg-4">
+                <a class="nav-link fw-bold px-lg-4 buttonNav" href="#">Contacto</a>
+              </li>
+              <li class="nav-item me-lg-4">
+                <a class="nav-link fw-bold px-lg-4 buttonNav" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item me-lg-4 loginNav">
+                <a class="nav-link fw-bold px-lg-4 ms-lg-5 buttonNav" href="#">Login</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="text-white ms-lg-2 bi bi-person-circle noneAvatar" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- Login -->
-        <div class="d-flex ms-5">
-          <a class="btn btn-warning fw-bold me-2" href="">Login</a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="text-white bi bi-person-circle" viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-          </svg>
-        </div>
-      </div>
-    </nav>
+      </nav>
   </header>
   <main>
     

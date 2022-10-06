@@ -1,7 +1,99 @@
-.logo {
-  width: 150px;
+:root {
+  --dark-grey: #303841;
+  --mid-grey: #3A4750;
+  --light-grey: #EEEEEE;
+  --yellow: #F6C90E;
 }
 
-main {
-  background-color: #3A4750;
+body {
+  background-color:var(--light-grey);
+}
+
+header {
+  background-color: var(--dark-grey);
+}
+
+.togglerNav {
+  background-color: var(--light-grey);
+  color: var(--yellow);
+}
+
+/* Breakpoint xs sm */
+@media (max-width: 767px) {
+  .logo {
+      max-width: 100px;
+  }
+
+  .buttonNav {
+      color: var(--light-grey);
+  }
+
+  .buttonNav:hover {
+      font-size: larger;
+      color: var(--yellow);
+  }
+
+  .buttonNav:active {
+    color: var(--mid-grey);
+  }
+
+  .noneAvatar {
+    display: none;
+  }
+}
+
+/* Breakpoint md */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo {
+      max-width: 150px;
+  }
+
+  .buttonNav {
+      color: var(--light-grey);
+  }
+
+  .buttonNav:hover {
+      font-size: larger;
+      color: var(--yellow);
+  }
+
+  .buttonNav:active {
+    color: var(--mid-grey);
+  }
+
+  .noneAvatar {
+    display: none;
+  }
+}
+  
+/* Breakpoint lg xl xxl */
+@media (min-width: 992px) {
+  .logo {
+      max-width: 150px;
+  }
+
+  .buttonNav {
+      color: var(--dark-grey);
+      background-color: var(--yellow);
+      border-radius: 5px;
+      
+  }
+
+  .buttonNav:hover {
+        
+      color: var(--light-grey);
+  }
+
+  .buttonNav:active {
+    color: var(--mid-grey);
+  }
+
+  .growInitial {
+    flex-grow: initial;
+
+  }
+
+  .loginNav {
+    display: flex;
+  }
 }
