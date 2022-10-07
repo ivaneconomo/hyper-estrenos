@@ -5,6 +5,22 @@
   --yellow: #F6C90E;
 }
 
+.bgDarkGrey {
+  background-color: var(--dark-grey);
+}
+
+.bgMidGrey {
+  background-color: var(--mid-grey);
+}
+
+.bgLightGrey {
+  background-color: var(--light-grey);
+}
+
+.bgYellow {
+  background-color: var(--yellow);
+}
+
 body {
   background-color:var(--light-grey);
 }
@@ -62,6 +78,9 @@ nav {
     display: none;
   }
   /* Fin Navbar */
+  .cardWidth {
+    width: 100%;
+}
 }
 
 /* Breakpoint md */
@@ -114,6 +133,10 @@ nav {
     display: none;
   }
   /* Fin Navbar */
+
+  .cardWidth {
+    width: 18rem;
+  }
 }
   
 /* Breakpoint lg xl xxl */
