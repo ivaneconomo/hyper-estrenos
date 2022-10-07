@@ -88,6 +88,12 @@ nav {
   .cardWidth {
     width: 100%;
 }
+
+/* ASIDE */
+/* Botón Dropdown */
+.dropdownSize {
+  width: 100%;
+}
 }
 
 /* Breakpoint md */
@@ -145,6 +151,11 @@ nav {
   .cardWidth {
     width: 14rem;
   }
+  /* ASIDE */
+  /* Búsqueda y Dropdown */
+  .dropdownSize, .formSize {
+    width: 500px;
+  }
 }
   
 /* Breakpoint lg xl xxl */
@@ -175,12 +186,15 @@ nav {
     display: flex;
   }
   /* Fin Navbar */
+
+  /* ASIDE */
+  /* Búsqueda y Dropdown */
+  .dropdownSize, .formSize {
+    width: 100%;
+  }
 }
 
 /* AGREGADOS TEMPORALES */
-aside {
-  border-left: 3px solid var(--light-grey);
-}
 
 footer {
   border-top: 3px solid var(--light-grey);
