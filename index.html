@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg px-5">
       <div class="container-fluid">
         <!-- Logo de la web -->
-        <a class="" href="#"><img class="logo" src="./assets/hre-img/hre-logo-white.png" alt=""></a>
+        <a href="#"><img class="logo" src="./assets/hre-img/hre-logo-white.png" alt=""></a>
         <!-- Boton Toggler -->
         <button class="navbar-toggler togglerNav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -134,52 +134,63 @@
       </button>
     </div>
   </section>
-  <section class="container-fluid">
-    <div class="row flex-column">
+  <section class="container-fluid bgLightGrey">
+    <div class="d-flex justify-content-evenly align-items-center p-sm-4 text-center">
+      <img class="popcornImg py-3 py-sm-0" src="./assets/hre-img/popcorn-left.png" alt="popcorn">
+      <h1>¡No te pierdas estos <br><strong class="text-warning">HYPER ESTRENOS</strong>!</h1>
+      <img class="popcornImg py-3 py-sm-0" src="./assets/hre-img/popcorn-right.png" alt="popcorn">
+    </div>
+    <div class="row flex-column flex-lg-row">
       <!-- Sección ultimas 3 entradas -->
-      <div class="col bgMidGrey">
+      <div class="col col-lg-9 bgYellow">
         <!-- Cards -->
         <div class="container">
-          <div class="row flex-column flex-md-row justify-content-evenly">
+          <div class="row flex-column flex-md-row justify-content-between py-md-4">
             <!-- Card Avatar -->
-            <div class="col col-md-3 mt-2 card px-0 cardWidth">
-              <img src="./assets/hre-poster/avatar.jpg" class="card-img-top" alt="Avatar">
-              <div class="card-body text-center">
-                <h5 class="card-title">AVATAR</h5>
-                <p class="card-text">El futuro: Jake Sully es un antiguo marine que vive postrado en una silla de ruedas, pero cuya determinación y valentía se mantienen intactas...</p>
-                <a href="#" class="btn btn-warning fw-bold">Ver más</a>
+            <div class="col mt-3 mt-md-0 col-md-3 col-lg-4 px-0 px-lg-2 cardWidth">
+              <div class="card h-100">
+                <img src="./assets/hre-poster/avatar.jpg" class="card-img-top" alt="Avatar">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">AVATAR</h5>
+                  <p class="card-text">Varios años después de los sucesos ocurridos en Avatar (2009), volvemos a Pandora donde Jake Sully y Neytiri han formado una familia...</p>
+                  <a href="#" class="btn btn-warning fw-bold">Ver más</a>
+                </div>
               </div>
             </div>
             <!-- Card Black Adam -->
-            <div class="col col-md-3 mt-2 card px-0 cardWidth">
-              <img src="./assets/hre-poster/black-adam.jpg" class="card-img-top" alt="Black Adam">
-              <div class="card-body text-center">
-                <h5 class="card-title">BLACK ADAM</h5>
-                <p class="card-text">Película sobre Black Adam, uno de los supervillanos más peligrosos pertenecientes al Universo de DC Comics, ya que no hay ningún héroe que lo haya superado...</p>
-                <a href="#" class="btn btn-warning fw-bold">Ver más</a>
+            <div class="col mt-3 mt-md-0 col-md-3 col-lg-4 px-0 px-lg-2 cardWidth">
+              <div class="card h-100">
+                <img src="./assets/hre-poster/black-adam.jpg" class="card-img-top" alt="Black Adam">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">BLACK ADAM</h5>
+                  <p class="card-text">Película sobre Black Adam, uno de los supervillanos más peligrosos, ya que no hay ningún héroe que lo haya superado, ni Superman...</p>
+                  <a href="#" class="btn btn-warning fw-bold">Ver más</a>
+                </div>
               </div>
             </div>
             <!-- Card Wakanda -->
-            <div class="col col-md-3 mt-2 card px-0 cardWidth">
-              <img src="./assets/hre-poster/wakanda.jpg" class="card-img-top" alt="Wakanda">
-              <div class="card-body text-center">
-                <h5 class="card-title">WAKANDA</h5>
-                <p class="card-text">Tras la muerte del rey T'Challala, la reina Ramonda (Angela Bassett) y sus subditos luchan por proteger su nación de las potencias mundiales...</p>
-                <a href="#" class="btn btn-warning fw-bold">Ver más</a>
+            <div class="col my-3 my-md-0 col-md-3 col-lg-4 px-0 px-lg-2 cardWidth">
+              <div class="card h-100">
+                <img src="./assets/hre-poster/wakanda.jpg" class="card-img-top" alt="Wakanda">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">WAKANDA</h5>
+                  <p class="card-text">Tras la muerte del rey T'Challala, la reina Ramonda (Angela Bassett) y sus subditos luchan por proteger su nación de las potencias mundiales...</p>
+                  <a href="#" class="btn btn-warning fw-bold">Ver más</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- Aside -->
-      <aside class="col">
-        <h1>ASIDE</h1>
+      <aside class="col col-lg-3 text-white text-center bgYellow">
+        <h1 class="h-100 w-100">ASIDE</h1>
       </aside>
     </div>
   </section>
   </main>
-  <footer>
-    
+  <footer class="bgDarkGrey text-white text-center p-5">
+    <h1>FOOTER</h1>
   </footer>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

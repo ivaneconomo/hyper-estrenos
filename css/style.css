@@ -29,6 +29,11 @@ nav {
   background-color: var(--dark-grey);
 }
 
+.popcornImg {
+  max-width: 5rem;
+}
+
+/* MEDIA QUERIES */
 /* Breakpoint xs sm */  
 @media (max-width: 767px) {
 
@@ -78,6 +83,8 @@ nav {
     display: none;
   }
   /* Fin Navbar */
+
+  /* Cards */
   .cardWidth {
     width: 100%;
 }
@@ -168,4 +175,13 @@ nav {
     display: flex;
   }
   /* Fin Navbar */
+}
+
+/* AGREGADOS TEMPORALES */
+aside {
+  border-left: 3px solid var(--light-grey);
+}
+
+footer {
+  border-top: 3px solid var(--light-grey);
 }
