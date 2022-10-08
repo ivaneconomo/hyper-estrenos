@@ -25,13 +25,14 @@ body {
   background-color:var(--light-grey);
 }
 
-nav {
+#mainNav {
   background-color: var(--dark-grey);
 }
 
 .popcornImg {
   max-width: 5rem;
 }
+
 
 /* MEDIA QUERIES */
 /* Breakpoint xs sm */  
