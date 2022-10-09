@@ -29,10 +29,23 @@ body {
   background-color: var(--dark-grey);
 }
 
-.popcornImg {
-  max-width: 5rem;
+.textShadow {
+  text-shadow: -1px 0 3px black, 0 1px 3px black, 1px 0 3px black, 0 -1px 3px black;
 }
 
+.popcornImg {
+  max-width: 4.7rem;
+}
+
+.pagination {
+  --bs-pagination-color: var(--yellow);
+  --bs-pagination-bg: var(--light-grey);
+  --bs-pagination-hover-color: var(--mid-grey);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.05rem var(--light-grey);
+  --bs-pagination-focus-color: var(--yellow);
+  --bs-pagination-active-bg: var(--mid-grey);
+  --bs-pagination-active-border-color: var(--dark-grey);
+}
 
 /* MEDIA QUERIES */
 /* Breakpoint xs sm */  
@@ -61,6 +74,7 @@ body {
   .loginButton:active {
     color: var(--mid-grey);
   }
+
   /* Botones de navegación */
   .buttonNav {
       color: var(--light-grey);
@@ -79,11 +93,11 @@ body {
     background-color: var(--light-grey);
     color: var(--yellow);
   }
+
   /* Ocultar Boton Login del Navbar expandido */
   .loginButtonDisplay {
     display: none;
   }
-  /* Fin Navbar */
 
   /* Cards */
   .cardWidth {
@@ -142,16 +156,17 @@ body {
     background-color: var(--light-grey);
     color: var(--yellow);
   }
+
   /* Ocultar Boton Login del Navbar expandido */
   .loginButtonDisplay {
     display: none;
   }
-  /* Fin Navbar */
 
   /* Cards */
   .cardWidth {
     width: 14rem;
   }
+
   /* ASIDE */
   /* Búsqueda y Dropdown */
   .dropdownSize, .formSize {
@@ -186,7 +201,6 @@ body {
   .loginButtonDisplay {
     display: flex;
   }
-  /* Fin Navbar */
 
   /* ASIDE */
   /* Búsqueda y Dropdown */
@@ -196,7 +210,6 @@ body {
 }
 
 /* AGREGADOS TEMPORALES */
-
 footer {
   border-top: 3px solid var(--light-grey);
 }
