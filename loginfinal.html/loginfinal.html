@@ -29,18 +29,41 @@
                             
                               <div class="form-row py-4 pt-5">
                                 <div class="offset-1  col-lg-10">
-                                    <input type="text" class="inpt px-3" placeholder="UserName">
+                                    <input type="text" class="inpt px-3" placeholder="Usuario">
                                 </div>
                             </div>
                             
                             <div class="form-row py-3">
                                 <div class="offset-1 col-lg-10">
-                                    <input type="password" class="inpt px-3" placeholder="Password">
+                                    <input type="password" class="inpt px-3" placeholder="Contraseña " required minlength="6" maxlength="12">
                                         
                                 </div>
                             </div>
-                            <a target="_blank" href="./contraseña.html">Forgot your password?</a> 
-                            <div class="form-row py-3">
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                ¿Olvidaste tu contraseña?
+                              </button>
+                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">¿Olvidaste tu contraseña?</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>¡Hola! te enviaremos un email con instrucciones a seguir para reestablecer tu contraseña. Por favor ingresa el correo en donde quieres recirbirlo.</p>
+                                      <input required type="text" class="input" placeholder="example@gmail.com" size="40">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="submit" class="btn btn-warning">Enviar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                           
+                           
+                           
+                              <div class="form-row py-3">
                                 <div class="offset-1 col-lg-10">
                                      
                                     <button class="boton1">LOG IN</button>
