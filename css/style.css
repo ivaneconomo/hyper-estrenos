@@ -283,4 +283,21 @@ input[type="radio"]:checked ~ label {
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-/* AGREGADOS TEMPORALES */
+
+/* GALERIA DE ESTRENOS */
+.fontGaleria {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#galeria .col-lg-3 {
+  margin: 0 !important;
+  padding: 15px;
+}
+
+#galeria img {
+  width: 100%;
+}
+
+#galeria img:hover {
+  border: 5px solid #f7f7f7;
+}
