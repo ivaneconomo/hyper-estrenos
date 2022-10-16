@@ -70,6 +70,10 @@
   color: var(--yellow);
 }
 
+.nav-link:focus {
+  color: var(--light-grey);
+}
+
 /* Ocultar Boton Login del Navbar expandido */
 .loginButtonDisplay {
   display: none;
