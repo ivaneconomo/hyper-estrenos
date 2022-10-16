@@ -1,0 +1,132 @@
+:root {
+  --dark-grey: #303841;
+  --mid-grey: #3A4750;
+  --light-grey: #EEEEEE;
+  --yellow: #F6C90E;
+}
+
+.bgDarkGrey {
+  background-color: var(--dark-grey);
+}
+
+.bgMidGrey {
+  background-color: var(--mid-grey);
+}
+
+.bgLightGrey {
+  background-color: var(--light-grey);
+}
+
+.bgYellow {
+  background-color: var(--yellow);
+}
+
+#mainNav {
+  background-color: var(--dark-grey);
+}
+
+.popcornImg {
+  max-width: 4.7rem;
+}
+
+/* Galeria */
+.fontGaleria {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#galeria .col-lg-3 {
+  margin: 0 !important;
+  padding: 15px;
+}
+
+#galeria img {
+  width: 100%;
+}
+
+#galeria img:hover {
+  border: 5px solid #f7f7f7;
+}
+
+
+/* MEDIA QUERIES */
+/* Breakpoint xs sm md*/  
+@media (max-width: 991px) {
+
+  /* Tamaño Logo */
+  .logo {
+      max-width: 100px;
+  }
+
+  /* Boton Login dentro de Offcanvas */
+  .loginButton {
+    text-decoration: none;
+    background-color: var(--yellow);
+    color: var(--dark-grey);
+    padding: 8px 16px;
+    margin-right: 5px;
+    border-radius: 4px;
+  }
+
+  .loginButton:hover {
+    color: var(--light-grey);
+    cursor: pointer;
+  }
+
+  .loginButton:active {
+    color: var(--mid-grey);
+  }
+
+  /* Botones de navegación */
+  .buttonNav {
+      color: var(--light-grey);
+  }
+
+  .buttonNav:hover {
+    font-size: larger;
+    color: var(--yellow);
+  }
+  
+  .buttonNav:active {
+    color: var(--mid-grey);
+  }
+
+  .togglerNav {
+    background-color: var(--light-grey);
+    color: var(--yellow);
+  }
+
+  /* Ocultar Boton Login del Navbar expandido */
+  .loginButtonDisplay {
+    display: none;
+  }
+}
+
+  
+/* Breakpoint lg xl xxl */
+@media (min-width: 992px) {
+
+  /* Tamaño Logo */
+  .logo {
+    max-width: 150px;
+  }
+
+  /* Botones de navegación */
+  .buttonNav {
+    color: var(--dark-grey);
+    background-color: var(--yellow);
+    border-radius: 5px;
+  }
+
+  .buttonNav:hover {
+        
+    color: var(--light-grey);
+  }
+
+  .buttonNav:active {
+    color: var(--mid-grey);
+  }
+
+  .loginButtonDisplay {
+    display: flex;
+  }
+}

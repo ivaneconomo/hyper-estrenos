@@ -1,0 +1,180 @@
+/* Variables Generales */
+:root {
+  --dark-grey: #303841;
+  --mid-grey: #3A4750;
+  --light-grey: #EEEEEE;
+  --yellow: #F6C90E;
+}
+
+.bgDarkGrey {
+  background-color: var(--dark-grey);
+}
+
+.bgMidGrey {
+  background-color: var(--mid-grey);
+}
+
+.bgLightGrey {
+  background-color: var(--light-grey);
+}
+
+.bgYellow {
+  background-color: var(--yellow);
+}
+
+/* Estilos Navbar */
+#mainNav {
+  background-color: var(--dark-grey);
+}
+
+/* Tamaño Logo */
+.logo {
+  max-width: 100px;
+}
+
+/* Boton Login dentro de Offcanvas */
+.loginButton {
+  text-decoration: none;
+  background-color: var(--yellow);
+  color: var(--dark-grey);
+  padding: 8px 16px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.loginButton:hover {
+  color: var(--light-grey);
+  cursor: pointer;
+}
+
+.loginButton:active {
+  color: var(--mid-grey);
+}
+
+/* Botones de navegación */
+.buttonNav {
+  color: var(--light-grey);
+}
+
+.buttonNav:hover {
+  font-size: larger;
+  color: var(--yellow);
+}
+
+.buttonNav:active {
+  color: var(--mid-grey);
+}
+
+.togglerNav {
+  background-color: var(--light-grey);
+  color: var(--yellow);
+}
+
+/* Ocultar Boton Login del Navbar expandido */
+.loginButtonDisplay {
+  display: none;
+}
+
+/* Breakpoint lg xl xxl */
+@media (min-width: 992px) {
+
+  /* Tamaño Logo */
+  .logo {
+    max-width: 150px;
+  }
+
+  /* Botones de navegación */
+  .buttonNav {
+    color: var(--dark-grey);
+    background-color: var(--yellow);
+    border-radius: 5px;
+  }
+
+  .buttonNav:hover {
+    color: var(--light-grey);
+    font-size: initial;
+  }
+
+  .buttonNav:active {
+    color: var(--mid-grey);
+  }
+
+  .loginButtonDisplay {
+    display: flex;
+  }
+}
+
+/* Estilos Footer */
+a.text-secondary:hover {
+  font-size: large;
+}
+
+/* Estilos Comentarios */
+.pochoclo {
+  width: 90px;
+}
+
+.peliss {
+  width: 220px;
+  height: 280px;
+}
+
+.letra {
+  font-size:100px;
+}
+
+.letraresumen {
+  font-size:15px;
+}
+
+#form {
+  width: 250px;
+  margin: 0;
+  height: 50px;
+}
+
+#form p {
+  text-align: start;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover, label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+@media (max-width: 575.98px) {
+  .pochoclo {    
+    height: 60px;
+    width: 60px;
+  }
+
+  .letra{
+    font-size:50px;
+  }
+}
+
+.box {
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
