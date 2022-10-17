@@ -15,7 +15,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../css/comentarios.css">
 </head>
-<body>
+<body class="bgYellow">
   <header class="sticky-top">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg px-5" id="mainNav">
@@ -67,30 +67,32 @@
     </nav>
   </header>
   <main>
-    <section class="d-flex border-5 box align-items-center my-3">
+    <section class="d-flex border-5 box align-items-center bgLightGrey text-warning">
       <img class="pochoclo ms-auto me-3"src="../assets/hre-img/popcorn-left.png" alt="popl" />
       <h1 class="letra fw-bold">ESTRENOS</h1>
       <img class="pochoclo me-auto ms-3 "src="../assets/hre-img/popcorn-right.png" alt="popr" />
     </section>
     <section>
       <!--Primer contenedor que va a tener la mitad de la patalla, primer parte imagen , segunda parte los comentarios-->
-      <div class="container pt-5 pb-5">
-        <div class="row ">
+      <div class="container-fluid pt-5 pb-5">
+        <!--Primer pelicula-->
+        <div class="row grid">
           <div class="col d-grid "> 
             <!--Aca tendria que tener dos columnas mas una imagen y la otra texto-->
-            <div class="row ">
+            <div class="row col-md-12 justify-content-xl-end">
               <div class="d-flex col-xl-6 col-sm-12 justify-content-center" id="Foto">
-                <img class="peliss"src="../assets/hre-poster/el-gato-con-botas.jpg" alt="" />
+                <img class="peliss" src="../assets/hre-poster/avatar.jpg" alt="Avatar" />
               </div>
               <!-- Parte derecha de la columna-->
-              <div class="col-xl-6 col-sm-12">
-                <h2 class="letraresumen pt-3">
-                  El Gato con Botas: el último deseo es una próxima película estadounidense de comedia de aventuras animada por computadora producida por DreamWorks Animation y distribuida por Universal Pictures. La película es una secuela de El Gato con Botas y es derivada de la franquicia de Shrek.
-                </h2>
-                <h4>Calificacion</h4>
-                <div class="d-flex">
+              <div class="col-xl-6 col-md-12 text-center">
+                <h2>Avatar</h2>
+                <p class="letraresumen pt-3 ">
+                  Cuando una antigua amenaza resurge, Jake debe volver a librar una difícil guerra contra los humanos. Pese a la adversidad, Jake acaba haciendo nuevos aliados, algunos de los cuales ya viven entre los Na'vi y otros con nuevos avatares. Con una nueva guerra en marcha, Jake y Ney'tiri tendrán que hacer todo lo posible para permanecer juntos y cuidar de su familia y su tribu.
+                </p>
+                <h2>Calificacion</h2>
+                <div class="d-flex justify-content-center">
                   <form>
-                    <p class="clasificacion">
+                    <p class="clasificacion display-5">
                       <input id="radio5" type="radio" name="estrellas" value="1"><!--
                       --><label for="radio5">★</label><!--
                       --><input id="radio4" type="radio" name="estrellas" value="2"><!--
@@ -107,13 +109,13 @@
               </div>
             </div>
           </div>
-          <div class="col d-flex justify-content-end" id="Comentarios">
-           <div class="row d-grid row-sm-1 w-75 col ">
+          <div class="col d-flex justify-content-center justify-content-xl-center" id="Comentarios">
+           <div class="row d-grid row-sm-1 w-75">
             <h3>Comentarios</h3>
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button f" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Alejandro
                   </button>
                 </h2>
@@ -155,7 +157,7 @@
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>Pelicula horrible.</p>
+                    <p>Pelicula increiblee</p>
                   </div>
                 </div>
               </div>
@@ -167,7 +169,7 @@
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>Pelicula horrible.</p>
+                    <p>Ya quiero que salga la siguiente</p>
                   </div>
                 </div>
               </div>
@@ -177,14 +179,240 @@
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ivan">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">Ingrese su comentario</label>
+                  <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <input type="submit" value="Enviar">
+                <a class="btn btn-danger" href="error404.html">Publicar comentario</a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <!--Segunda pelicula-->
+      <div class="row grid pt-5">
+        <div class="col d-grid "> 
+          <!--Aca tendria que tener dos columnas mas una imagen y la otra texto-->
+          <div class="row col-md-12 justify-content-xl-end">
+            <div class="d-flex col-xl-6 col-sm-12 justify-content-center" id="Foto">
+              <img class="peliss" src="../assets/hre-poster/black-adam.jpg" alt="Avatar" />
+            </div>
+            <!-- Parte derecha de la columna-->
+            <div class="col-xl-6 col-md-12 text-center">
+              <h2>Black Adam</h2>
+              <p class="letraresumen pt-3 ">
+                Black Adam es la película del antihéroe de DC Comics que da nombre al filme -encarnado por Dwayne Johnson- gran antagonista de Shazam!. Este largometraje es la hisotoria de su origen y revelando su pasado como esclavo en el país Kahndaq. Nacido en el Antiguo Egipto, Black Adam tiene superfuerza, velocidad, resistencia, la capacidad de volar y disparar rayos
+              </p>
+              <h2>Calificacion</h2>
+              <div class="d-flex justify-content-center">
+                <form>
+                  <p class="clasificacion display-5">
+                    <input id="radio5" type="radio" name="estrellas" value="1"><!--
+                    --><label for="radio5">★</label><!--
+                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                    --><label for="radio4">★</label><!--
+                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                    --><label for="radio3">★</label><!--
+                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                    --><label for="radio2">★</label><!--
+                    --><input id="radio1" type="radio" name="estrellas" value="5"><!--
+                    --><label for="radio1">★</label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center justify-content-xl-center" id="Comentarios">
+         <div class="row d-grid row-sm-1 w-75">
+          <h3>Comentarios</h3>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button f" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Alejandro
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Vista así, esta película es mucho más rara.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Carlos
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <p>Ahora todo tiene sentido.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 Iván
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Nunca habías notado el lado oscuro de Disney.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                 Fede
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Pelicula increiblee</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                 José
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Ya quiero que salga la siguiente</p>
+                </div>
+              </div>
+            </div>
+            <div >
+              <div class="mb-3" >
+                <label for="exampleFormControlInput1" class="form-label">Ingrese su Nombre </label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ivan">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <a class="btn btn-danger" href="error404.html">Publicar comentario</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--Tercer pelicula-->
+      <div class="row grid pt-5">
+      <div class="col d-grid "> 
+        <!--Aca tendria que tener dos columnas mas una imagen y la otra texto-->
+        <div class="row col-md-12 justify-content-xl-end">
+          <div class="d-flex col-xl-6 col-sm-12 justify-content-center" id="Foto">
+            <img class="peliss" src="../assets/hre-poster/wakanda.jpg" alt="Avatar" />
+          </div>
+          <!-- Parte derecha de la columna-->
+          <div class="col-xl-6 col-md-12 text-center">
+            <h2>Wakanda</h2>
+            <p class="letraresumen pt-3 ">
+              Tras la muerte del rey T'Challala, la reina Ramonda (Angela Bassett) y sus subditos: Shuri (Letitia Wright), M'Baku (Winston Duke), Okoye (Danai Gurira) y las Dora Milaje (incluyendo a Florence Kasumba), luchan por proteger su nación de las potencias mundiales que aprovechan la debilidad de Wakanda sin Black Panther. 
+            </p>
+            <h2>Calificacion</h2>
+            <div class="d-flex justify-content-center">
+              <form>
+                <p class="clasificacion display-5">
+                  <input id="radio5" type="radio" name="estrellas" value="1"><!--
+                  --><label for="radio5">★</label><!--
+                  --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                  --><label for="radio4">★</label><!--
+                  --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                  --><label for="radio3">★</label><!--
+                  --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                  --><label for="radio2">★</label><!--
+                  --><input id="radio1" type="radio" name="estrellas" value="5"><!--
+                  --><label for="radio1">★</label>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center justify-content-xl-center" id="Comentarios">
+       <div class="row d-grid row-sm-1 w-75">
+        <h3>Comentarios</h3>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button f" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Alejandro
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Vista así, esta película es mucho más rara.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Carlos
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+               <p>Ahora todo tiene sentido.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+               Iván
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Nunca habías notado el lado oscuro de Disney.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+               Fede
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Pelicula increiblee</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+               José
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Ya quiero que salga la siguiente</p>
+              </div>
+            </div>
+          </div>
+          <div >
+            <div class="mb-3" >
+              <label for="exampleFormControlInput1" class="form-label">Ingrese su Nombre </label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ivan">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <a class="btn btn-danger" href="error404.html">Publicar comentario</a>
+          </div>
+        </div>
+      </div>
+    </div>
       </div>
     </section>
   </main>

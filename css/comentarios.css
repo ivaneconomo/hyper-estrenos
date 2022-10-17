@@ -115,8 +115,14 @@ a.text-secondary:hover {
 }
 
 .peliss {
-  width: 220px;
-  height: 280px;
+  height: 500px;
+  width: 250px;
+  margin: auto;
+}
+
+.peliss:hover {
+  transform: scale(1.1);
+  transition: 0.6s ease;
 }
 
 .letra {
@@ -124,7 +130,7 @@ a.text-secondary:hover {
 }
 
 .letraresumen {
-  font-size:15px;
+  font-size:23px;
 }
 
 #form {
@@ -155,26 +161,63 @@ label {
 }
 
 label:hover, label:hover ~ label {
-  color: orange;
+  color: var(--light-grey);
 }
 
 input[type="radio"]:checked ~ label {
-  color: orange;
-}
-
-@media (max-width: 575.98px) {
-  .pochoclo {    
-    height: 60px;
-    width: 60px;
-  }
-
-  .letra{
-    font-size:50px;
-  }
+  color:var(--light-grey);
 }
 
 .box {
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* AGREGADOS TEMPORALES */
+footer {
+  border-top: 3px solid var(--light-grey);
+}
+
+.accordion {
+  --bs-accordion-btn-focus-border-color: #a086fe;
+  --bs-accordion-active-color: #f8f9fa;
+  --bs-accordion-active-bg: #3A4750;
+  --bs-accordion-btn-focus-border-color: #3A4750;
+  --bs-accordion-btn-focus-box-shadow:#3A4750;
+}
+
+/* MEDIA */
+
+@media (max-width: 768px) {
+  .grid {
+    display: grid;
+  }
+  .peliss {
+    height: 350px;
+    width: 400px;
+    margin: auto;
+  }
+  .letraresumen {
+    font-size:20px;
+    padding: 60px;
+  }
+}
+@media (max-width: 575.98px) {
+  .pochoclo {    
+    height: 60px;
+    width: 60px;
+  }
+  .peliss {
+    height: 420px;
+    width: 310px;
+  }
+  .letra{
+    font-size:50px;
+  }
+}
+@media (max-width: 1200px) {
+  .letraresumen {
+    font-size:20px;
+  }
 }
