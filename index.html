@@ -45,7 +45,10 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1">
               <li class="nav-item me-lg-3">
-                <a class="nav-link fw-bold buttonNav px-lg-3" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Suscripción</a>
+                <a class="nav-link fw-bold buttonNav px-lg-3" type="button" data-bs-toggle="modal" data-bs-target="#modalSuscripcion">Suscripción</a>
+              </li>
+              <li class="nav-item me-lg-3">
+                <a class="nav-link fw-bold buttonNav px-lg-3" href="./paginas-adicionales/galeria.html">Galería</a>
               </li>
               <li class="nav-item me-lg-3">
                 <a class="nav-link fw-bold buttonNav px-lg-3" href="./paginas-adicionales/contacto.html">Contacto</a>
@@ -66,8 +69,8 @@
       </div>
     </nav>
   </header>
-  <!-- COMIENZO MODAL -->
-  <div class="modal" id="myModal">
+  <!-- Modal Suscripción -->
+  <div class="modal" id="modalSuscripcion">
     <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
       <div class="modal-content">
         <!-- Modal Header -->
@@ -88,8 +91,8 @@
               <div id="emailForm" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
             </div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-              <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones.</label>
+              <input type="checkbox" class="form-check-input" id="terminosCheck" required>
+              <label class="form-check-label" for="terminosCheck">Acepto los términos y condiciones.</label>
             </div>
             <button type="submit" class="btn btn-dark fw-bold">Suscribirme</button>
           </form>
@@ -101,7 +104,6 @@
       </div>
     </div>
   </div>
-  <!-- FIN MODAL -->
   <main>
     <!-- Slider -->
     <section>

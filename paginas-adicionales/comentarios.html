@@ -45,7 +45,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1">
               <li class="nav-item me-lg-3">
-                <a class="nav-link fw-bold buttonNav px-lg-3" href="#">Suscripción</a>
+                <a class="nav-link fw-bold buttonNav px-lg-3" type="button" data-bs-toggle="modal" data-bs-target="#modalSuscripcion">Suscripción</a>
               </li>
               <li class="nav-item me-lg-3">
                 <a class="nav-link fw-bold buttonNav px-lg-3" href="./contacto.html">Contacto</a>
@@ -66,6 +66,41 @@
       </div>
     </nav>
   </header>
+  <!-- Modal Suscripción -->
+  <div class="modal" id="modalSuscripcion">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">¡Suscríbete a nuestro boletín!</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="nombreSuscriptor" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombreSuscriptor" maxlength="40" required>
+            </div>
+            <div class="mb-3">
+              <label for="emailSuscriptor" class="form-label">Email</label>
+              <input type="email" class="form-control" id="emailSuscriptor" aria-describedby="emailForm" required>
+              <div id="emailForm" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="terminosCheck" required>
+              <label class="form-check-label" for="terminosCheck">Acepto los términos y condiciones.</label>
+            </div>
+            <button type="submit" class="btn btn-dark fw-bold">Suscribirme</button>
+          </form>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning fw-bold" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <main>
     <section class="d-flex border-5 box align-items-center my-3">
       <img class="pochoclo ms-auto me-3"src="../assets/hre-img/popcorn-left.png" alt="popl" />

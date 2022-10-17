@@ -54,6 +54,8 @@
 /* Botones de navegación */
 .buttonNav {
   color: var(--light-grey);
+  width: 7rem;
+  text-align: center;
 }
 
 .buttonNav:hover {

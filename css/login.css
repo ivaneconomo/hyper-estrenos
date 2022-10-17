@@ -32,7 +32,7 @@ a.text-secondary:hover {
 }
 
 /* Login */
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -40,27 +40,31 @@ a.text-secondary:hover {
 }
 
 .loginEstilo {
-  background-color: whitesmoke;
+  background-color: var(--light-grey);
   border-radius: 10px;
   box-shadow: 15px 15px 20px;
 }
 
+
+
 .containerImg {
   display: flex;
   padding: 3rem;
-  background-color: rgb(226, 69, 100);
+  background-color: var(--yellow);
   border-radius: 10px;
 }
 
 .img1 {
   width: 100%;
   justify-content: center;
+  
+  
 }
 
 .login h1 {
   font-size: 4rem;
   font-weight: 800;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 
+   
 }
 
 .inpt {
@@ -80,11 +84,22 @@ a.text-secondary:hover {
   border: none;
   outline: none;
   border-radius: 60px;
-  color: white;
+  color: var(--light-grey);
   font-weight: 500;
-  background-color: rgba(0,0,0,0.75);
+  background-color: var(--dark-grey);
 }
 
 .boton1:hover {
-  background-color: crimson;
+  background-color: var(--yellow);
+  color: var(--dark-grey);
+}
+@media(max-width:1000px){
+.containerImg {
+  display: flex;
+  padding: 3rem;
+  background-color:var(--yellow);
+  border-radius: 10px;
+  display: none;
+  display: ;
+}
 }
