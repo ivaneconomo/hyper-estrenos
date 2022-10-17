@@ -22,6 +22,11 @@
       <div class="container-fluid">
         <!-- Logo de la web -->
         <a href="../index.html"><img class="logo" src="../assets/hre-img/hre-logo-white.png" alt="Logo Hyper Estrenos"></a>
+        <ul class="navbar-nav flex-grow-1">
+          <li class="ms-auto">
+            <a class="fw-bold btn btn-warning" href="../index.html">Inicio</a>
+          </li>
+        </ul>
     </nav>
   </header>
   <main>
@@ -30,7 +35,6 @@
         <div class="row g-0 loginEstilo">
           <div class="col-lg-7 text-center py-5">
             <h1>Login</h1>
-            
             <form>
               <div class="form-row py-4 pt-5">
                 <div class="offset-1 col-lg-10">
@@ -43,32 +47,30 @@
                 </div>
               </div>
               <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">¿Olvidaste tu contraseña?</button>
-             
               <div class="form-row py-3">
                 <div class="offset-1 col-lg-10">
                   <button class="boton1">LOG IN</button>
                 </div>
               </div>
-                <!-- redes sociales -->
-              
+              <!-- redes sociales -->
               <div class="containerIconos w-100">
                 <div class="row">
                   <div class="col-12">Iniciar sesion con</div>
                 </div>
                 <div class="row">
                   <div class="col-lg-5 col-md-5 col-sm-7">
-                        <button class="btn btn-outline-primary w-75 m-1">
-                          <div class="row align-items-center">
-                            <div class="col-2">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                              </svg>
-                            </div>
-                              <div class="col-10">
-                                Facebook
-                              </div>
+                    <button class="btn btn-outline-primary w-75 m-1">
+                      <div class="row align-items-center">
+                        <div class="col-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>
+                        </div>
+                          <div class="col-10">
+                            Facebook
                           </div>
-                        </button>
+                      </div>
+                    </button>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-7">
                     <button class="btn btn-outline-danger w-75 m-1">
@@ -84,13 +86,8 @@
                       </div>
                     </button>
                   </div>
-
                 </div>
-                
-                
-                
               </div>
-              
             </form> 
           </div>
           <div class="col-lg-5 containerImg">
@@ -98,33 +95,31 @@
           </div>
         </div>
       </div>
-<!-- ventana modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Recuperar contraseña</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="mb-3">
-                        <p>¡Hola! te enviaremos un email con instrucciones a seguir para reestablecer tu contraseña. Por favor ingresa el correo en donde quieres recirbirlo.</p>
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com" required>
-                        <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electronico.</div>
-                      </div>                     
-                      
-                  
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-warning" data-bs-target="#">Enviar</button>
-                  </div>
-                </div>
-              </div>
+      <!-- ventana modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Recuperar contraseña</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <p>¡Hola! te enviaremos un email con instrucciones a seguir para reestablecer tu contraseña. Por favor ingresa el correo en donde quieres recirbirlo.</p>
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com" required>
+                  <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electronico.</div>
+                </div>  
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-warning" data-bs-target="#">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <!-- Footer -->
@@ -169,7 +164,6 @@
           </div>
         </div>
       </div>
-      
     </div>
     <p class="bgDarkGrey m-0 text-center text-secondary">&copy; Copyright - All rights reserved 2022</p>   
   </footer>

@@ -39,12 +39,11 @@
   color: var(--dark-grey);
   padding: 8px 16px;
   margin-right: 5px;
-  border-radius: 4px;
+  border-radius: 0.375rem;
 }
 
 .loginButton:hover {
   color: var(--light-grey);
-  cursor: pointer;
 }
 
 .loginButton:active {
@@ -54,17 +53,11 @@
 /* Botones de navegación */
 .buttonNav {
   color: var(--light-grey);
-  width: 7rem;
-  text-align: center;
 }
 
 .buttonNav:hover {
   font-size: larger;
   color: var(--yellow);
-}
-
-.buttonNav:active {
-  color: var(--mid-grey);
 }
 
 .togglerNav {
@@ -90,19 +83,15 @@
   }
 
   /* Botones de navegación */
+
   .buttonNav {
-    color: var(--dark-grey);
-    background-color: var(--yellow);
-    border-radius: 5px;
+  width: initial;
+  text-align: center;
   }
 
   .buttonNav:hover {
-    color: var(--light-grey);
+    color: var(--yellow);
     font-size: initial;
-  }
-
-  .buttonNav:active {
-    color: var(--mid-grey);
   }
 
   .loginButtonDisplay {
@@ -111,8 +100,12 @@
 }
 
 /* Estilos Footer */
-a.text-secondary:hover {
-  font-size: large;
+.footerLink {
+  color: #757575;
+}
+
+.footerLink:hover {
+  color: var(--light-grey);
 }
 
 /* Página principal */
