@@ -99,9 +99,7 @@
     color: var(--mid-grey);
   }
 
-  .loginButtonDisplay {
-    display: flex;
-  }
+  
 }
 
 /* Estilos Footer */
