@@ -57,14 +57,11 @@ a.text-secondary:hover {
 .img1 {
   width: 100%;
   justify-content: center;
-  
-  
 }
 
 .login h1 {
   font-size: 4rem;
   font-weight: 800;
-   
 }
 
 .inpt {
@@ -93,6 +90,7 @@ a.text-secondary:hover {
   background-color: var(--yellow);
   color: var(--dark-grey);
 }
+
 @media(max-width:1000px){
 .containerImg {
   display: flex;
@@ -100,6 +98,5 @@ a.text-secondary:hover {
   background-color:var(--yellow);
   border-radius: 10px;
   display: none;
-  display: ;
-}
+  }
 }
