@@ -22,17 +22,36 @@
   background-color: var(--yellow);
 }
 
-/* Estilos Footer */
-a.text-secondary:hover {
-  font-size: large;
+/* Estilos Navbar */
+#mainNav {
+  background-color: var(--dark-grey);
 }
 
+/* Tamaño Logo */
 .logo {
-  max-width: 150px;
+  max-width: 100px;
+}
+
+/* Breakpoint lg xl xxl */
+@media (min-width: 992px) {
+
+  /* Tamaño Logo */
+  .logo {
+    max-width: 150px;
+  }
+}
+
+/* Estilos Footer */
+.footerLink {
+  color: #757575;
+}
+
+.footerLink:hover {
+  color: var(--light-grey);
 }
 
 /* Login */
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -44,8 +63,6 @@ a.text-secondary:hover {
   border-radius: 10px;
   box-shadow: 15px 15px 20px;
 }
-
-
 
 .containerImg {
   display: flex;
@@ -91,7 +108,8 @@ a.text-secondary:hover {
   color: var(--dark-grey);
 }
 
-@media(max-width:1000px){
+@media (max-width:1000px) {
+  
 .containerImg {
   display: flex;
   padding: 3rem;

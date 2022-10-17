@@ -83,7 +83,6 @@
   }
 
   /* Botones de navegación */
-
   .buttonNav {
   width: initial;
   text-align: center;
@@ -173,11 +172,6 @@ input[type="radio"]:checked ~ label {
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-/* AGREGADOS TEMPORALES */
-footer {
-  border-top: 3px solid var(--light-grey);
-}
-
 .accordion {
   --bs-accordion-btn-focus-border-color: #a086fe;
   --bs-accordion-active-color: #f8f9fa;
@@ -186,36 +180,42 @@ footer {
   --bs-accordion-btn-focus-box-shadow:#3A4750;
 }
 
-/* MEDIA */
-
+/* Media */
 @media (max-width: 768px) {
+
   .grid {
     display: grid;
   }
+
   .peliss {
     height: 350px;
     width: 400px;
     margin: auto;
   }
+
   .letraresumen {
     font-size:20px;
     padding: 60px;
   }
 }
+
 @media (max-width: 575.98px) {
   .pochoclo {    
     height: 60px;
     width: 60px;
   }
+
   .peliss {
     height: 420px;
     width: 310px;
   }
+
   .letra{
     font-size:50px;
   }
 }
 @media (max-width: 1200px) {
+
   .letraresumen {
     font-size:20px;
   }
