@@ -108,115 +108,14 @@
   color: var(--light-grey);
 }
 
-/* Estilos Comentarios */
-.pochoclo {
-  width: 90px;
+/* Body Contacto */
+.imag {
+  background-color: var(--light-grey);
 }
 
-.peliss {
-  height: 500px;
-  width: 250px;
-  margin: auto;
-}
-
-.peliss:hover {
-  transform: scale(1.1);
-  transition: 0.6s ease;
-}
-
-.letra {
-  font-size:100px;
-}
-
-.letraresumen {
-  font-size:23px;
-}
-
-#form {
-  width: 250px;
+* {
+  padding: 0;
   margin: 0;
-  height: 50px;
-}
-
-#form p {
-  text-align: start;
-}
-
-#form label {
-  font-size: 20px;
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-label {
-  color: grey;
-}
-
-.clasificacion {
-  direction: rtl;
-  unicode-bidi: bidi-override;
-}
-
-label:hover, label:hover ~ label {
-  color: var(--light-grey);
-}
-
-input[type="radio"]:checked ~ label {
-  color:var(--light-grey);
-}
-
-.box {
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
-
-/* AGREGADOS TEMPORALES */
-footer {
-  border-top: 3px solid var(--light-grey);
-}
-
-.accordion {
-  --bs-accordion-btn-focus-border-color: #a086fe;
-  --bs-accordion-active-color: #f8f9fa;
-  --bs-accordion-active-bg: #3A4750;
-  --bs-accordion-btn-focus-border-color: #3A4750;
-  --bs-accordion-btn-focus-box-shadow:#3A4750;
-}
-
-/* MEDIA */
-
-@media (max-width: 768px) {
-  .grid {
-    display: grid;
-  }
-  .peliss {
-    height: 350px;
-    width: 400px;
-    margin: auto;
-  }
-  .letraresumen {
-    font-size:20px;
-    padding: 60px;
-  }
-}
-@media (max-width: 575.98px) {
-  .pochoclo {    
-    height: 60px;
-    width: 60px;
-  }
-  .peliss {
-    height: 420px;
-    width: 310px;
-  }
-  .letra{
-    font-size:50px;
-  }
-}
-@media (max-width: 1200px) {
-  .letraresumen {
-    font-size:20px;
-  }
+  box-sizing: border-box;
+  justify-content: center;
 }
