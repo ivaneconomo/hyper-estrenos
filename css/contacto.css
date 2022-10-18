@@ -107,20 +107,19 @@
   color: var(--light-grey);
 }
 
-/* Galería */
+
+/* Body Contacto */
 .popcornImg {
   max-width: 4.7rem;
 }
 
-#galeria .col-lg-3 {
-  margin: 0 !important;
-  padding: 15px;
+.imag {
+  background-color: var(--light-grey);
 }
 
-#galeria img {
-  width: 100%;
-}
-
-#galeria img:hover {
-  border: 5px solid #f7f7f7;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  justify-content: center;
 }

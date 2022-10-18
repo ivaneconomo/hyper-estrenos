@@ -22,13 +22,32 @@
   background-color: var(--yellow);
 }
 
-/* Estilos Footer */
-a.text-secondary:hover {
-  font-size: large;
+/* Estilos Navbar */
+#mainNav {
+  background-color: var(--dark-grey);
 }
 
+/* Tamaño Logo */
 .logo {
-  max-width: 150px;
+  max-width: 100px;
+}
+
+/* Breakpoint lg xl xxl */
+@media (min-width: 992px) {
+
+  /* Tamaño Logo */
+  .logo {
+    max-width: 150px;
+  }
+}
+
+/* Estilos Footer */
+.footerLink {
+  color: #757575;
+}
+
+.footerLink:hover {
+  color: var(--light-grey);
 }
 
 /* Login */
@@ -40,7 +59,7 @@ a.text-secondary:hover {
 }
 
 .loginEstilo {
-  background-color: whitesmoke;
+  background-color: var(--light-grey);
   border-radius: 10px;
   box-shadow: 15px 15px 20px;
 }
@@ -48,7 +67,7 @@ a.text-secondary:hover {
 .containerImg {
   display: flex;
   padding: 3rem;
-  background-color: rgb(226, 69, 100);
+  background-color: var(--yellow);
   border-radius: 10px;
 }
 
@@ -60,7 +79,6 @@ a.text-secondary:hover {
 .login h1 {
   font-size: 4rem;
   font-weight: 800;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 
 }
 
 .inpt {
@@ -80,11 +98,23 @@ a.text-secondary:hover {
   border: none;
   outline: none;
   border-radius: 60px;
-  color: white;
+  color: var(--light-grey);
   font-weight: 500;
-  background-color: rgba(0,0,0,0.75);
+  background-color: var(--dark-grey);
 }
 
 .boton1:hover {
-  background-color: rgb(220, 20, 60);
+  background-color: var(--yellow);
+  color: var(--dark-grey);
+}
+
+@media (max-width:1000px) {
+  
+.containerImg {
+  display: flex;
+  padding: 3rem;
+  background-color:var(--yellow);
+  border-radius: 10px;
+  display: none;
+  }
 }

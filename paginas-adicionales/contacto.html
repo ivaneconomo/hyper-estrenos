@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galería</title>
+  <title>Contacto</title>
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
@@ -13,7 +13,7 @@
   <!-- Bootstrap CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../css/galeria.css">
+  <link rel="stylesheet" href="../css/contacto.css">
 </head>
 <body>
   <header class="sticky-top">
@@ -51,7 +51,7 @@
                 <a class="nav-link mx-2 fw-bold buttonNav" type="button" data-bs-toggle="modal" data-bs-target="#modalSuscripcion">Suscripción</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link fw-bold buttonNav" href="./contacto.html">Contacto</a>
+                <a class="nav-link fw-bold buttonNav" href="./galeria.html">Galería</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link fw-bold buttonNav" href="./acerca-de-nosotros.html">Nosotros</a>
@@ -104,41 +104,35 @@
       </div>
     </div>
   </div>
-  <main>
-    <section class="container-fluid bgLightGrey py-3">
-      <div class="d-flex justify-content-center align-items-center">
-        <img class="popcornImg" src="../assets/hre-img/popcorn-left.png" alt="popcorn">
-        <h1 class="display-5 fw-bold text-center mx-3 my-0">Galería de Estrenos</h1>
-        <img class="popcornImg" src="../assets/hre-img/popcorn-right.png" alt="popcorn">
-      </div>
+  <main> 
+    <section class="container-fluid d-flex justify-content-center py-3 bgLightGrey">
+      <img class="popcornImg" src="../assets/hre-img/popcorn-right.png" alt="popcorn">
     </section>
-    <section class="container" id="galeria">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <img src="../assets/hre-poster/amsterdam.jpg" alt="Amsterdam">
+      <section class="contacto py-5">
+        <div class="container">
+          <div class="row g-0 formEstilo">
+            <div class="col-lg-5 py-5 mx-2">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Envianos tu consulta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
+              </div>
+              <div class="d-flex">
+                <button type="submit" class="btn btn-warning" data-bs-target="#">Enviar</button>
+              </div>
+            </div>
+            <div class="col-lg-5 mx-2">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2725.601360424567!2d-65.20142907248746!3d-26.83101355434115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x94225d244af30871%3A0xf5abf7314a57c1fd!2sCOSTUMBRES%20DEL%20NORTE%2C%20Avenida%2024%20de%20Septiembre%2C%2025%20de%20Mayo%20%26%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!3m2!1d-26.830916799999997!2d-65.2046115!5e0!3m2!1ses-419!2sar!4v1666025072829!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <img src="../assets/hre-poster/avatar.jpg" alt="Avatar">
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <img src="../assets/hre-poster/black-adam.jpg" alt="Black Adam">
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <img src="../assets/hre-poster/el-gato-con-botas.jpg" alt="El Gato con Botas">
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <img src="../assets/hre-poster/fall.jpg" alt="Fall">
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <img src="../assets/hre-poster/halloween.jpg" alt="Halloween">
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <img src="../assets/hre-poster/la-escuela-del-bien-y-el-mal.jpg" alt="La Escuela del Bien y el Mal">
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <img src="../assets/hre-poster/la-mujer-rey.jpg" alt="La Mujer Rey">
-        </div>
-      </div>
     </section>
   </main>
   <footer>
