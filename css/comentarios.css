@@ -39,11 +39,12 @@
   color: var(--dark-grey);
   padding: 8px 16px;
   margin-right: 5px;
-  border-radius: 0.375rem;
+  border-radius: 4px;
 }
 
 .loginButton:hover {
   color: var(--light-grey);
+  cursor: pointer;
 }
 
 .loginButton:active {
@@ -60,13 +61,13 @@
   color: var(--yellow);
 }
 
+.buttonNav:active {
+  color: var(--mid-grey);
+}
+
 .togglerNav {
   background-color: var(--light-grey);
   color: var(--yellow);
-}
-
-.nav-link:focus {
-  color: var(--light-grey);
 }
 
 /* Ocultar Boton Login del Navbar expandido */
@@ -84,13 +85,18 @@
 
   /* Botones de navegación */
   .buttonNav {
-  width: initial;
-  text-align: center;
+    color: var(--dark-grey);
+    background-color: var(--yellow);
+    border-radius: 5px;
   }
 
   .buttonNav:hover {
-    color: var(--yellow);
+    color: var(--light-grey);
     font-size: initial;
+  }
+
+  .buttonNav:active {
+    color: var(--mid-grey);
   }
 
   .loginButtonDisplay {
@@ -99,12 +105,8 @@
 }
 
 /* Estilos Footer */
-.footerLink {
-  color: #757575;
-}
-
-.footerLink:hover {
-  color: var(--light-grey);
+a.text-secondary:hover {
+  font-size: large;
 }
 
 /* Estilos Comentarios */
@@ -171,7 +173,6 @@ input[type="radio"]:checked ~ label {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
-<<<<<<< HEAD
 .comentario{
   height: 40px;
 }
@@ -179,8 +180,6 @@ input[type="radio"]:checked ~ label {
 footer {
   border-top: 3px solid var(--light-grey);
 }
-=======
->>>>>>> eda5d1f5dc4e7ccf44bf11bbc0498835dae13633
 
 .accordion {
   --bs-accordion-btn-focus-border-color: #a086fe;
@@ -190,56 +189,39 @@ footer {
   --bs-accordion-btn-focus-box-shadow:#3A4750;
 }
 
-<<<<<<< HEAD
 /* MEDIA */
 
 @media (max-width: 768px) and (max-width: 991px){
-=======
-/* Media */
-@media (max-width: 768px) {
-
->>>>>>> eda5d1f5dc4e7ccf44bf11bbc0498835dae13633
   .grid {
     display: grid;
   }
-
   .peliss {
     height: 500px;
     width: 300px;
     margin: auto;
   }
-
   .letraresumen {
     font-size:20px;
     padding: 60px;
   }
 }
-<<<<<<< HEAD
 @media (max-width: 710.98px) {
-=======
-
-@media (max-width: 575.98px) {
->>>>>>> eda5d1f5dc4e7ccf44bf11bbc0498835dae13633
   .pochoclo {    
     height: 60px;
     width: 60px;
   }
-
   .peliss {
     height: 420px;
     width: 310px;
   }
-
   .letra{
     font-size:50px;
   }
 }
 @media (max-width: 1200px) {
-
   .letraresumen {
     font-size:20px;
   }
-<<<<<<< HEAD
 }
 @media (max-width: 375px) {
   .pochoclo {
@@ -252,6 +234,3 @@ footer {
     width: 200px;
   }
 }
-=======
-}
->>>>>>> eda5d1f5dc4e7ccf44bf11bbc0498835dae13633
