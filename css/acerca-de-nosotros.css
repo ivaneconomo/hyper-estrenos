@@ -107,6 +107,10 @@
   color: var(--light-grey);
 }
 
+.popcornImg {
+  max-width: 4.7rem;
+}
+
 /* Acerca de nosotros */
 @media (max-width: 767px) {
   .rounded {
